@@ -1,7 +1,25 @@
-body {
+/* body {
 	background-color: #a8dadc;
+} */
+
+body::before {
+	display: block;
+	content: '';
+	height: 50px;
 }
 
-.testing {
-	margin: auto;
+i.text-warning:hover {
+	color: white !important;
+}
+
+#image {
+	border-radius: 50%;
+}
+
+#name {
+	text-transform: uppercase;
+}
+
+#programming-language {
+	list-style: none;
 }
