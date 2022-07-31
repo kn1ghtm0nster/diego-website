@@ -2,153 +2,285 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link href="https://languages.abranhe.com/logos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Diego Quintanilla</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles.css">
+    <title>Diego Quintanilla</title>
 </head>
 
 <body>
-  <!-- navbar -->
-  <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-    <div class="container">
-      <a href="#showcase" class="navbar-brand" id="home">
-        <div>DQ</div>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"><span
-          class="navbar-toggler-icon"></span></button>
-
-      <div class="collapse navbar-collapse" id="nav-menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a href="#Technologies" class="nav-link">Technologies</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Socials" class="nav-link">Socials</a>
-          </li>
-          <li class="nav-item">
-            <a href="mailto:diequintanilla@gmail.com" class="nav-link">Contact Me!</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Misc" class="nav-link disabled">Misc (coming soon!)</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- showcase -->
-  <section class="bg-dark text-light p-5 text-center text-sm-start" id="showcase">
-    <div class="container">
-      <div class="d-md-flex align-items-center justify-content-between">
-        <div>
-          <h1 id="name">Diego <span class="text-warning">Quintanilla</span></h1>
-          <p class="lead my-4">
-            Hi There! <br> Welcome to my personal website! It's still pretty basic for the time being but once I have
-            more
-            projects and other things to showcase here, I will make the needed updates. My name is Diego and I am a
-            <span class="text-warning">Web Developer</span> Fellow at Sprinboard. Currently on track to graduate in
-            September
-            2022.
-          </p>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="https://github.com/kn1ghtm0nster" target="_blank"><i
+                    class="bi bi-github" id="icon"></i></a>
+            <a href="https://www.linkedin.com/in/diegoquintanilla/" class="navbar-brand fw-bold" target="_blank"><i
+                    class="bi bi-linkedin" id="icon"></i></a>
+            <a href="https://www.instagram.com/mrquintanillaforreal/" class="navbar-brand fw-bold" target="_blank"><i
+                    class="bi bi-instagram" id="icon"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img class="img-fluid d-none d-sm-block border border-warning border-3" src="images/web_image.png"
-          alt="image-of-diego" id="image">
-      </div>
-    </div>
-  </section>
-  <!-- technologies -->
-  <section id="Technologies" class="p-5">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md">
-          <!-- <h2>Technologies</h2> -->
-          <!-- NOTE: could add a custom jumbotron on this part to not have all the empty white space  -->
-          <ul class="py-4">
-            <li id="programming-language" class="py-2">Python - <i class="programming lang-python"></i></li>
-            <li id="programming-language" class="py-2">HTML - <i class="programming lang-html"></i></li>
-            <li id="programming-language" class="py-2">CSS - <i class="programming lang-css"></i></li>
-            <li id="programming-language" class="py-2">Javascript - <i class="programming lang-javascript"></i></li>
-          </ul>
+    </nav>
+
+    <!-- home section -->
+    <section id="home">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <h3 class="text-warning">WEB DEVELOPER</h3>
+
+                    <h1 class="display-5 fw-bold">I'M DIEGO <br> QUINTANILLA</h1>
+
+                    <div class="buttons mt-4">
+                        <a href="#contact" class="btn btn-outline-warning px-4 py-2">Hire Me</a>
+                        <a href="#about" class="btn btn-warning text-white px-4 py-2">About</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/self_image.png" alt="Picture-of-diego"
+                        class="rounded mx-auto d-none d-md-block d-block mt-3">
+                </div>
+            </div>
         </div>
-        <div class="col-md p-5">
-          <h2>Technologies</h2>
-          <p class="lead">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam dolorum sunt vero cum, a magnam!
-          </p>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime corrupti alias
-            illo rerum cupiditate dolores impedit aspernatur eum. Nobis tempora enim cupiditate culpa iste ducimus qui
-            voluptates eligendi nihil!</p>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+        <div class="container my-5 py-5">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">About me</h1>
+                    <hr>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img src="images/outside_image.jpg" alt="idk" class="rounded mx-auto d-none d-md-block mt-2">
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="fw-bold">DIEGO QUINTANILLA</h1>
+                        <h3 class="text-warning mb-4">WEB DEVELOPER</h3>
+                        <p class="lead mb-4">
+                            Currently in Dallas, TX moving over to Colorado at the end 2022 (I know, during the winter.
+                            The BEST time to coordinate a major move).
+                        </p>
+                        <p class="lead mb-4">
+                            Besides planning a stressful move, I have also been studying to become a Web Developer
+                            through Springboard's Software Engineering Bootcamp. Although the structured education is
+                            fairly recent, I began my career transition into tech about three years ago learning Python
+                            as my first language and since then I have added even more skills and abilities to build
+                            static and full stack applications.
+                        </p>
+                        <p class="lead mb-4">
+                            Outside of making small applications and completing assignments, I also enjoy reading books,
+                            gaming with friends, browsing the custom keyboard scene, and most important of all, going
+                            outside with friends or just a nice hike!
+                        </p>
+                        <div class="buttons">
+                            <a class="btn btn-outline-warning px-5 py-2" href="misc/Diego-Resume.pdf" download
+                                target="_blank">Download
+                                CV</a>
+                            <a href="#contact" class="btn btn-warning text-white px-5 py-2">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- socials -->
-  <section id="Socials" class="p-5 bg-dark text-light">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-md p-5">
-          <h2> Social Media!</h2>
-          <p class="lead">
-            Want to see what I do when I am NOT learning to program things for school or work? Follow me on any of the
-            platforms listed
-            below!
-          </p>
-          <p class="lead">
-            <a href="https://www.instagram.com/mrquintanillaforreal/" target="_blank"><i
-                class="fab fa-instagram fa-lg text-warning mx-2"></i></a>
-            <a href="#INSTAGRAM HERE"><i class="fab fa-twitter fa-lg text-warning mx-2" id="social-image"></i></a>
-            <a href="https://github.com/kn1ghtm0nster" target="_blank"><i class="fab fa-github fa-lg text-warning mx-2"
-                id="social-image"></i></a>
-            <a href="https://www.linkedin.com/in/diegoquintanilla/" target="_blank"><i
-                class="fab fa-linkedin fa-lg text-warning mx-2" id="social-image"></i></a>
-          </p>
+    <!-- Skills section -->
+    <section id="skills">
+        <div class="container my-5 py-5">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">My Skills</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="fw-bold mb-4">Skills & Experience</h1>
+                    <p class="lead">
+                        Besides core programming/markup languages, I have listed other libraries that I have used which
+                        are pretty popular and common from my learning and reading online. Please note that the items
+                        below are not ALL the libraries and technologies I have used, but some of the most popular and
+                        favorites of mine.
+                    </p>
+                    <p class="lead">Additional Technologies</p>
+                    <ul>
+                        <li class="lead">Bootstrap 5</li>
+                        <li class="lead">Bulma</li>
+                        <li class="lead">PostgreSQL</li>
+                        <li class="lead">Jinja 2</li>
+                        <li class="lead">Morgan</li>
+                        <li class="lead">Bcrypt (both Flask and Node)</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 d-flex flex-column justify-content-center">
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">Node.js</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">Express.js</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">Python</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">Flask</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">SQL</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100">HTML</div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">CSS</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md">
-          <img class="border border-0 rounded-3 img-fluid"
-            src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
-            alt="social-media-images">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container my-5 py-5">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">Projects</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-4 h-100" style="width: 20rem;">
+                        <img src="images/frontend.png" alt="something here" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3>Giphy Party</h3>
+                            <p class="card-text">
+                                Basic static frotend project which makes AJAX requests from a static search input and
+                                adds the gif returned to the body of the page. You can find more information on the
+                                overall project and the technologies used in the repo using <a
+                                    href="https://github.com/kn1ghtm0nster/giphy-app">this</a> link!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 h-100" style="width: 20rem;">
+                        <img src="images/database.png" alt="something here" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3>Currency Converter</h3>
+                            <p class="card-text">
+                                Flask Static web page which takes inputs from a user and converts the input currency to
+                                another currency code the user has selected. This project was an assignment from
+                                Springboard which taught us how to use Python and Flask to make external API requests
+                                and display the response on the web page. Link to repo can be found <a
+                                    href="https://github.com/kn1ghtm0nster/currency-converter">here</a>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-4 h-100" style="width: 20rem;">
+                        <img src="images/fullstack.png" alt="something here" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h3>Poke-Forum</h3>
+                            <p class="card-text">
+                                Fullstack application using Python and Flask along with PostgreSQL to create a live
+                                website. This was my first major capstone project for Springboard and is still currently
+                                fully deployed with more updates coming later. Link for the GitHub repo can be found <a
+                                    href="https://github.com/kn1ghtm0nster/Poke-Forum">here</a>!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- footer -->
-  <footer class="p-5 bg-dark text-white text-center position-relative">
-    <div class="container">
-      <p class="lead">Copyright &copy; 2022 Diego Quintanilla</p>
-      <a href="#" class="position-absolute bottom-0 end-0 p-5">
-        <i class="bi bi-arrow-up-circle h1 text-warning"></i>
-      </a>
-    </div>
-  </footer>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container my-5 bg-promary">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="fw-bold text-center">Contact</h1>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="https://formspree.io/f/xzbwpejg" method="POST" name="Contact Request">
+                        <div class="mb-3">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Ex. John Smith"
+                                    name="full-name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email_address" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email_address"
+                                    placeholder="name@example.com" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" name="message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="app.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
-
-<!-- TODO:
-  1. add correct links to social media links
-  2. make sizes for the language images a bit larger
-  3. fill in  technologies section and put a brief story?
-  4. setup fonts for website.
--->
